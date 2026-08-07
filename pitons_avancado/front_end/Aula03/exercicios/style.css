@@ -126,21 +126,21 @@ footer{
     background: black;
     color: white;
     padding: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-#contatos_empresa{
-    text-align: center;
-}
-
-footer h2{
     margin-bottom: 10px;
 }
 
-footer p{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.conteudo_footer{
+    margin-left: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.conteudo_footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#noticias article img{
+    width: 500px;
 }
