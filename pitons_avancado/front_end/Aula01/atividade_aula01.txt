@@ -1,0 +1,30 @@
+exer01:
+    Internte: é a rede mundial de computadores
+    Web: é uma aplicação que roda em um navegador, armazenada em um servidor hospedado em algum datacenter
+
+exer02:
+    YouTube
+    Google
+    WhatsApp
+
+exer03:
+    Cliente: é o usuário que irá acessar a aplicação pelo navegador, solicitando os dados do servidor
+    Servidor: é o hospedeiro do site, armazena todos os arquivos e dados necessários
+
+exer04:
+    O cliente realiza uma requisição ao acessar o site, o servidor envia as informações para exibir na tela, o cliente clica em alguns botões,
+    o servidor recebe essas requisições e envia as novas informações
+
+exer05:
+    Estilizar o site e tornar vísivel e utilizavel os códigos do back-end
+
+exer06:
+    É o cérebro da aplicação, é o que executa a lógica, comandos, armazena os dados no banco
+
+exer07:
+    JavaScript
+    HTML
+    CSS
+
+exer08:
+    IDEs, como VS Code, etc

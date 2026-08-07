@@ -1,0 +1,9 @@
+1: são tags e funções que explicam ao computador como o site irá se comportar, ou seja, separa melhor a função de cada parte do código
+
+2: b-representar o cabeçalho
+
+3: c-nav
+
+4: ser o centro, é a parte principal do site, onde fica armazenado o conteudo principal
+
+9: article é um grupo de conteúdo só, que não tem outras "subsessões". Já o section agrupa conteúdos relacionados entre si. Por exemplo, uma página com posts, a página é feita com o section, e os posts são feitos com article

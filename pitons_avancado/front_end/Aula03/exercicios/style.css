@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+header{
+    background: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cabecalho{
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#produtos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+.titulo_sessoes{
+    text-align: center;
+    font-size: 50px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 320px;
+    
+    border: 1px solid #ddd;
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-height: 300px;
+
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.conteudo_card{
+    flex: 1;
+}
+
+.card img{
+    width: 55px;
+}
+
+.botoes{
+    margin-bottom: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_comprar{
+    background: #1473e6;
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+.btn_testegratis{
+    border: 2px solid #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#quem_somos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contatos_empresa{
+    text-align: center;
+}
+
+footer h2{
+    margin-bottom: 10px;
+}
+
+footer p{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
