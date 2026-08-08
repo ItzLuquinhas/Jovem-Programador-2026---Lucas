@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Aula 04</title>
+</head>
+<body>
+    <main>
+        <form>
+            <div class="janela_login">
+                <input type="text" placeholder="Usuário" id="username" required>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <input type="date" placeholder="Data de Nascimento" id="data_nascimento" required>
+                <select id="estados_login" required>
+                    <option value="" disabled selected>Estado</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                </select>
+                <textarea name="comentarios" id="comentarios" placeholder="Digite seu comentário"></textarea>
+                <label for="hobbie_esporte">Esporte</label>
+                <input type="checkbox" id="hobbie_esporte">
+                <label for="hobbie_Games">Games</label>
+                <input type="checkbox" id="hobbie_games">
+                <label for="hobbie_musica">Música</label>
+                <input type="checkbox" id="hobbie_musica">
+                <label for="select_manha">Manhã</label>
+                <input type="radio" id="select_manha" name="periodo">
+                <label for="select_tarde">Tarde</label>
+                <input type="radio" id="select_tarde" name="periodo">
+                <label for="select_noite">Noite</label>
+                <input type="radio" id="select_noite" name="periodo">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetar Dados</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
