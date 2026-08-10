@@ -1,1 +1,236 @@
-/*Fazer CSS ainda*/
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+}
+
+
+/* =========================
+   JANELA DO LOGIN
+========================= */
+
+.janela_login {
+    width: 600px;
+    max-width: 100%;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   INPUTS PRINCIPAIS
+========================= */
+
+.janela_login input[type="text"],
+.janela_login input[type="email"],
+.janela_login input[type="password"],
+.janela_login input[type="date"],
+.janela_login select,
+.janela_login textarea {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   EFEITO AO CLICAR
+========================= */
+
+.janela_login input:focus,
+.janela_login select:focus,
+.janela_login textarea:focus {
+    border-color: #667eea;
+
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.janela_login textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   GRUPOS DE OPÇÕES
+========================= */
+
+.grupo_opcoes {
+    margin-top: 20px;
+}
+
+.grupo_opcoes h3 {
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    color: #444;
+}
+
+
+/* =========================
+   CHECKBOX / RADIO
+========================= */
+
+.opcoes {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.opcoes label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+.opcoes input {
+    width: 18px;
+    height: 18px;
+
+    margin: 0;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.botoes button {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Enviar */
+
+.botoes button[type="submit"] {
+    background-color: #667eea;
+
+    color: white;
+}
+
+.botoes button[type="submit"]:hover {
+    background-color: #5367d8;
+
+    transform: translateY(-2px);
+}
+
+
+/* Resetar */
+
+.botoes button[type="reset"] {
+    background-color: #eeeeee;
+
+    color: #444;
+}
+
+.botoes button[type="reset"]:hover {
+    background-color: #dddddd;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .opcoes {
+        gap: 15px;
+    }
+
+    .opcoes label {
+        font-size: 13px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botoes button {
+        width: 100%;
+    }
+}

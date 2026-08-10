@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Aula 04</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -20,20 +21,54 @@
                     <option value="PR">Paraná</option>
                 </select>
                 <textarea name="comentarios" id="comentarios" placeholder="Digite seu comentário"></textarea>
-                <label for="hobbie_esporte">Esporte</label>
-                <input type="checkbox" id="hobbie_esporte">
-                <label for="hobbie_Games">Games</label>
-                <input type="checkbox" id="hobbie_games">
-                <label for="hobbie_musica">Música</label>
-                <input type="checkbox" id="hobbie_musica">
-                <label for="select_manha">Manhã</label>
-                <input type="radio" id="select_manha" name="periodo">
-                <label for="select_tarde">Tarde</label>
-                <input type="radio" id="select_tarde" name="periodo">
-                <label for="select_noite">Noite</label>
-                <input type="radio" id="select_noite" name="periodo">
-                <button type="submit">Enviar</button>
-                <button type="reset">Resetar Dados</button>
+                <!-- Hobbies -->
+                <div class="grupo_opcoes">
+                    <h3>Hobbies</h3>
+                    <div class="opcoes">
+                        <label>
+                            <input type="checkbox" id="hobbie_esporte">
+                            Esporte
+                        </label>
+
+                        <label>
+                            <input type="checkbox" id="hobbie_games">
+                            Games
+                        </label>
+
+                        <label>
+                            <input type="checkbox" id="hobbie_musica">
+                            Música
+                        </label>
+                    </div>
+
+                </div>
+                <!-- Período -->
+                <div class="grupo_opcoes">
+                    <h3>Período</h3>
+                    <div class="opcoes">
+                        <label>
+                            <input type="radio" id="select_manha" name="periodo">
+                            Manhã
+                        </label>
+                        <label>
+                            <input type="radio" id="select_tarde" name="periodo">
+                            Tarde
+                        </label>
+                        <label>
+                            <input type="radio" id="select_noite" name="periodo">
+                            Noite
+                        </label>
+                    </div>
+                </div>
+                <!-- Botões -->
+                <div class="botoes">
+                    <button type="submit">
+                        Enviar
+                    </button>
+                    <button type="reset">
+                        Resetar Dados
+                    </button>
+                </div>
             </div>
         </form>
     </main>
