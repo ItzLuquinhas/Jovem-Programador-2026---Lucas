@@ -1,0 +1,47 @@
+main{
+    background: yellow;
+}
+
+main p{
+    color: blue;
+}
+
+.destaque{
+    color: red;
+    font-weight: bold;
+}
+
+#principal{
+    color: green;
+    size: 32px;
+}
+
+#paragrafo_e5_1{
+    color: #FF0000;
+}
+#paragrafo_e5_2{
+    color: rgb(0,255,0);
+}
+#paragrafo_e5_3{
+    color: blue;
+}
+
+#exercicio_6{
+    font-family: Arial, Helvetica, sans-serif;
+    size: 24px;
+    font-style: italic;
+}
+
+#exercicio_7{
+    text-align: center;
+}
+
+#login_exer_8_9{
+    background: gray;
+    width: 300px;
+}
+
+#botao{
+    background: green;
+    color: white;
+}

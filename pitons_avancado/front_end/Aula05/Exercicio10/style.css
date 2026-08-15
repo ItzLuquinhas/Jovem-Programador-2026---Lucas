@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#discordy_principal{
+    size: 30px;
+}
+
+.titulos_secundarios{
+    size: 20px;
+}
+
+#formulario_login{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+    background: lightgray;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.inputs_informacoes{
+    border-radius: 12px;
+    text-align: center;
+}
