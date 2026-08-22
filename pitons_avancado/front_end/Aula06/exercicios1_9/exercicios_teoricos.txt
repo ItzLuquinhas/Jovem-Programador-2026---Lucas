@@ -1,0 +1,5 @@
+1- Margin: define os espaços ao redor de um elemento, Padding: define os espaços internos de um elemento, Border: são as bordas dos elementos, Display: ele controla como o elemento aparece na tela, no meio, em linha, em coluna, etc
+
+2- Margin é o espaçamento externo de um elemento e o Padding são os espaçamentos internos
+
+6- display block ocupa toda a largura disponível da tela, já o display inline ocupa apenas o espaço necessário
