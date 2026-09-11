@@ -4,61 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página da Aula 08</title>
+    <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 </head>
 <body>
     <!--Cabeçalho-->
     <header>
-        <h1>YouTube Plus</h1>
-        <p>O melhor site de entretenimento do mundo.</p>
-        <nav>
-
-        </nav>
+        <div class="conteudo_cabecalho">
+            <h1 class="titulo_principal">YouTube Plus</h1>
+            <p>O melhor site de entretenimento, notícias e memes do mundo.</p>
+        </div>
     </header>
+    
+    <!--Menu lateral-->
+    <aside id="sec_menu_lateral">
+        <h2>Menu lateral</h2>
+        <nav>
+            <ul>
+                <li><a href="#sec_formulario_usuario">Formulário do Usuário</a></li>
+                <li><a href="#sec_entretenimento">Entretenimento</a></li>
+                <li><a href="#sec_noticias">Notícias</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <!--Página principal-->
     <main>
-        <section id="formulario_usuario">
-            <form>
-                <input type="text" id="nome_usuario">
+        <!--Formulário do usuário-->
+        <section id="sec_formulario_usuario">
+            <form class="formularios">
+                <h2 class="titulo_sessoes">Formulário do Usuário</h2>
+                <input type="text" id="nome_usuario" placeholder="Nome de Usuário">
                 <button onclick="salvar()">Salvar</button>
                 <button onclick="remover()">Remover</button>
-                <br>
-                <button onclick="copiar()">Aprendendo HTML5!</button>
+                <button onclick="copiar()">Clique para copiar: Aprendendo HTML5!</button>
             </form>
         </section>
-        <section id="entretenimento">
+        
+        <!--Entretenimento-->
+        <section id="sec_entretenimento">
             <h2>Entretenimento da Nossa Página</h2>
-            <div>
-                <audio controls>
-                    <source src="./midia/audio/setembro-vai-entrar-o-grosso-lula.mp3" type="audio/mpeg">
-                </audio>
+            <div class="categoria_entretenimento">
+                <h3>Áudios</h3>
+                <div class="lista_audios">
+                    <div class="card_audios">
+                        <h4>Lula: Setembro vai entrar o grosso</h4>
+                        <audio controls>
+                            <source src="./midia/audio/setembro-vai-entrar-o-grosso-lula.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
             </div>
-            <div>
-                <video controls width="500">
-                    <source src="./midia/video/bitelo-quebrando-a-maquina.mp4" type="video/mp4">
-                </video>
+            <div class="categoria_entretenimento">
+                <h3>Vídeos</h3>
+                <div class="lista_videos">
+                    <div class="card_videos">
+                        <h4>Bitelo Quebrando a Máquina</h4>
+                        <video controls>
+                            <source src="./midia/video/bitelo-quebrando-a-maquina.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+        
+        <!--Notícias-->
+        <section id="sec_noticias">
             <h2>Notícias</h2>
-            <article>
-                <h3>Notícia 1</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum ipsum delectus soluta consequatur molestias eligendi, ab, deserunt iusto aliquid sapiente nemo vel. Similique velit veniam quasi nesciunt corporis.</p>
-            </article>
-            <article>
-                <h3>Notícia 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ab ipsa nam, eos facere illum blanditiis culpa repudiandae perferendis exercitationem tempore explicabo? Mollitia doloremque iure ea odio ullam laboriosam quod.</p>
-            </article>
+            <div class="lista_noticias">
+                <article class="card_noticia">
+                    <h3>Notícia 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum ipsum delectus soluta consequatur molestias eligendi, ab, deserunt iusto aliquid sapiente nemo vel. Similique velit veniam quasi nesciunt corporis.</p>
+                </article>
+                <article class="card_noticia">
+                    <h3>Notícia 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus ab ipsa nam, eos facere illum blanditiis culpa repudiandae perferendis exercitationem tempore explicabo? Mollitia doloremque iure ea odio ullam laboriosam quod.</p>
+                </article>
+            </div>
         </section>
-        <aside>
-            <h2>Menu lateral</h2>
-        </aside>
     </main>
-
+    
     <!--Rodapé-->
     <footer>
         <h2>Entre em contato conosco!</h2>
+        <p>Gostou da nossa página? Entre em contato conosco para saber mais sobre nossos produtos e novidades.</p>
+        <p>📧 itzsoftwares.solutions@itzsoftwares.com</p>
+        <p>© 2026 ItzSoftwares Solutions. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
