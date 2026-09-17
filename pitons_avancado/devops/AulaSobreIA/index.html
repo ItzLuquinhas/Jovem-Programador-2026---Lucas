@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <input id="tarefa" type="text" placeholder="Digite uma tarefa">
+    <button onclick="adicionar()">Adicionar</button>
+
+    <ul id="lista"></ul>
+
+    <p>Data atual: <strong id="data_atual">Carregando data...</strong></p>
+
+    <script>
+        function adicionar() {
+            let textoTarefa = document.getElementById("tarefa").value
+
+            if(textoTarefa !== "") {
+                let itemTarefa = document.createElement("li")
+                itemTarefa.innerHTML = textoTarefa
+
+                let checkbox = document.createElement("input")
+                checkbox.type = "checkbox"
+
+                let botaoRemover = document.createElement("button")
+                botaoRemover.innerHTML = "Remover"
+
+                botaoRemover.onclick = function() {
+                    itemTarefa.remove()
+                }
+
+                itemTarefa.appendChild(checkbox)
+                itemTarefa.appendChild(botaoRemover)
+
+                document.getElementById("lista").appendChild(itemTarefa)
+            }
+        }
+
+        function atualizarRelogio() {
+        const elementoData = document.getElementById('data_atual');
+        const agora = new Date();
+
+        //formatar data e hora
+        const formatoCompleto = agora.toLocaleString('pt-BR', {
+            dateStyle: 'short',
+            timeStyle: 'medium'
+        });
+        elementoData.textContent = formatoCompleto;
+        }
+    setInterval(atualizarRelogio,1000);
+    </script>
+</body>
+</html>
