@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Aula 10</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{mensagem}}</p>
+        <p>{{nome}}</p>
+        <p>{{idade}}</p>
+        <p>{{cidade}}</p>
+
+        <p>{{nome}} tem {{idade}} anos e mora em {{cidade}}</p>
+        <img :src="urlImage" alt="Imagem">
+        <a :href="linkSite">YouTube</a>
+
+        <p v-if="logado">Bem-vindo(a) de volta!</p>
+        <p v-else>Faça login para continuar</p>
+        <button class="login" @click="logar">Login</button>
+
+        <!--É melhor pois o v-show é mais recomendado quando há uma mudança grande, como é o caso de carregamento de abas, etc-->
+        <p v-show="carregando">Carregando...</p>
+        <button @click="carregar">Carregar</button>
+
+        <h2>Contador</h2>
+        <div class="numero">{{contador}}</div>
+        <p v-if="contador > 5">É maior que 5!</p>
+        <button @click="incrementar">Incrementar</button>
+        <button @click="zerar">Zerar contador</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
