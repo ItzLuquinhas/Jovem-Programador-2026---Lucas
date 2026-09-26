@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Aula 11</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h1>Aula 11</h1>
+
+    <div id="app">
+        <section>
+            <!--Exercício 1-->
+            <h2>Contador - Exercício 1</h2>
+            <div class="numero">{{contador}}</div>
+            <button @click="incrementar_contador">Incrementar</button>
+            <button @click="subtrair_contador">Subtrair</button>
+            <button @click="zerar_contador">Zerar contador</button>
+        </section>
+        <br>
+        <section>
+            <!--Exercício 2-->
+            <h2>Olá, nome - Exercício 2</h2>
+            <input v-model="nome" placeholder="Seu nome">
+            <p v-if="nome">Olá, {{nome}}!</p>
+        </section>
+        <section>
+            <!--Exercício 3-->
+            <h2>Nome e Sobrenome - Exercício 3</h2>
+            <input v-model="nomeC" placeholder="Nome">
+            <input v-model="sobrenomeC" placeholder="Sobrenome">
+            <p>Olá, {{nomeCompleto}}!</p>
+        </section>
+        <section>
+            <!--Exercício 4-->
+            <h2>Minhas preferências - Exercício 4</h2>
+            <input id="novidade" v-model="novidades" type="checkbox">
+            <label for="novidade">Quero receber novidades</label>
+            <p>{{novidades}}</p>
+            <label for="cores">Selecione sua cor favorita: </label>
+            <select v-model="cor" id="cores">
+                <option value="vermelho">Vermelho</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+            </select>
+            <p>Sua cor favorita é: {{cor}}</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
